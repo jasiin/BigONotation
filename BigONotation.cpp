@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//O(1)
+//O(1) Constant Time
 int main(){
 	int x=3, y=3, z;
 	
@@ -12,7 +12,7 @@ return 0;
 
 
 
-//O(N)
+//O(N) Linear Time
 int main(){
 	int n=5;
 	for (int i=1; i<n; i++){
@@ -21,7 +21,7 @@ int main(){
 }
 
 
-//O(N^2)
+//O(N^2) Quadratic Time
 int main(){
 	int n=3;
 	for (int i=0; i<n; i++){
@@ -33,7 +33,7 @@ int main(){
 }
 
 
-//O(log N)
+//O(log N) Logarithmic Time
 int faktorial (int A);
 
 int main(){
@@ -55,7 +55,7 @@ int faktorial (int A){
 }
 
 
-//O(2^N)
+//O(2^N) Exponential Time
 int fibonacci(int n) {
 	if (n == 0 || n ==1){
     		return n;
