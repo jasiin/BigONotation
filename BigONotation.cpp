@@ -1,25 +1,28 @@
 #include <iostream>
 using namespace std;
 
-/*int main(){
+//O(1)
+int main(){
 	int x=3, y=3, z;
 	
 	z=x*y;
 	cout << z;
 return 0;
-}*/
+}
 
 
 
-/*int main(){
+//O(N)
+int main(){
 	int n=5;
 	for (int i=1; i<n; i++){
 		cout<<i<<" ";
 	}
-}*/
+}
 
 
-/*int main(){
+//O(N^2)
+int main(){
 	int n=3;
 	for (int i=0; i<n; i++){
 		for (int j=0; j<n; j++){
@@ -27,11 +30,11 @@ return 0;
 		}
 	cout<<endl;
 	}
-}*/
+}
 
 
-
-/*int faktorial (int A);
+//O(log N)
+int faktorial (int A);
 
 int main(){
 	
@@ -49,12 +52,30 @@ int faktorial (int A){
 		return(A);
 	else
 		return (A*faktorial(A-1));
-}*/
-
-
-int main(){
-	int n=3;
-	for (int i=1; i<n; i=i*2){
-		cout<<"halo :"<<i<<endl;
-	}
 }
+
+
+//O(2^N)
+int fibonacci(int n) {
+	if (n == 0 || n ==1){
+    		return n;
+  	} else {
+    		return (fibonacci(n-1) + fibonacci(n-2));
+  }
+}
+
+int main() {
+  
+	int n, i, j = 0;
+
+  	cout << "Masukkan batas jumlah bilangan fibonacci: ";
+  	cin >> n;
+
+  	cout << "Hasil bilangan fibonacci: \n";
+  	for (i = 1; i <= n; i++){
+    	cout << "fibonacci ke-"<< i <<": " << fibonacci(j) << endl;
+    	j++;
+  	}
+return 0;
+}
+
